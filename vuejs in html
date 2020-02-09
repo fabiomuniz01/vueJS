@@ -1,2 +1,9 @@
 the intention with v-model on hidden inputs is to set up a one-way binding, in which case it's much better to use
 <input type="hidden" :value="someData" >
+
+dispara metodo vuejs quando perde o foco do input text
+<input type="text" name="CNPJ" class="form-control" data-input-mask="99.999.999/9999-99"
+                                   v-model="params.cnpj"
+                                   v-on:blur="ExisteCnpj"
+                                   placeholder="eg.: CNPJ da empresa / órgão público" maxlength="18"
+                                   title="Por favor informe o CNPJ da empresa / órgão público" required />
