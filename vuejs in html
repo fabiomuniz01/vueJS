@@ -1,0 +1,2 @@
+the intention with v-model on hidden inputs is to set up a one-way binding, in which case it's much better to use
+<input type="hidden" :value="someData" >
